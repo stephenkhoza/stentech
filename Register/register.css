@@ -1,0 +1,107 @@
+/*header*/
+.container{
+    background: #34c9bc;
+    color:#ffffff;   
+    height: 6%;
+    width:100%;
+    padding-top: 9px;
+    border-bottom: #616768 5px solid;
+    overflow:hidden;
+}
+#id_Logo{
+    color:#e8491d;
+    font-size: 30px;
+    line-height: 40px;
+    margin-top:20px;
+    font-family: comic sans MS;
+    margin-left: 120px;
+    font-weight: bold;
+    left: 200px;
+    top: 10px;
+}
+.logo{
+    color: #4d90fe;
+    font-weight: bold;
+}
+
+/*body*/
+body{
+    background:url('.logo.png');
+    padding: 0px;
+    margin: 0px;
+    overflow:hidden;
+    height: 1000px;
+    position: relative
+}
+#Body_section{
+    width: 2000px;
+    height: auto;
+    margin: auto;
+    padding-left:12px;
+
+}
+/*sign up form*/
+#right{
+    z-index: 2;
+    float: none;
+    top: 100px;
+    margin-left:10px;
+}
+#form input{
+    border:#4d90fe 2px solid;
+    border-radius:4px;
+    color:Black;
+    padding: 13px;
+}
+.signup-button{
+    color: #ffffff;
+    text-shadow:0 1px rgba(0,0,0,0.1);
+    background:#4d90fe ;
+    border-radius: 3px;
+    padding: 15px;
+    padding-left: 16px;
+}
+/*sign in button*/
+#button{
+    
+}
+a{
+    text-decoration: none;
+    color: #fff;    
+}
+a:active {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+/*footer*/
+#footer{
+    background:#e8491d;
+    text-align: center;
+    border-radius:2px;
+    margin-bottom:-300px;
+    padding-top: 10px;
+    padding-bottom:20px;
+}
+
+/*MEDIA QUARIES*/
+@media(max-width:768px){
+    header.container,
+    header.sign_in{
+        display: none;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .sign_in{
+        margin-right:800px;
+    }
+    header{
+        padding-bottom: 8px;
+    }
+    #form input{
+        width: 70%;
+        margin-bottom: 5px;
+        float: none;
+    }   
+}  

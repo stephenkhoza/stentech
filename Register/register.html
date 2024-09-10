@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=UTF-8>
+        <meta name="viewport" content="width=device-width">
+        <meta name="Keyword" content="create account">
+        <meta name="Aurthor" content="Stephen Khoza">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="register.css">
+
+        <title>Create an Account</title>
+    </head>
+
+    <body>
+        <style>
+        body{
+        background-image:url('.background.png');
+        overflow: scroll;
+        background-size: 1600px;
+        padding-bottom: 100px;
+        background-repeat: no-repeat;
+        }
+        </style>
+            <header>
+        <div class="container" style="text-align: center;">
+             <div id="id_Logo">
+                <span class="logo">StenTech</span>
+             </div>
+        </div>
+    </header>
+        <div id="right">
+                    <p style="font-size:26px;color: #44d4d4; font-weight:Bold;">Create an account</p>
+                    <p style="font-weight: bold; color: #000000;"> It's free always will be.</p>
+            <div id="form">
+                <form method="POST" action="connectivity-sign-up.php">                                               
+                <table>
+                    <tr><td>
+                        <input type="text" style="width:42%;" maxlength="16"placeholder="First name" name="fname" required="Please input username"> <input class="surname" style="width:41%;" type="text" maxlength="20" placeholder="Surname"></td>
+                    </tr>                    
+                    <tr>                      
+                        <td><input type="text"name="Email or Phone" style="width:294px ;" maxlength="34"placeholder="Email or Phone"></td>
+                    </tr>
+                    <tr>                      
+                        <td><input type="text"name="Username" style="width:294px ;" maxlength="18"placeholder="Username"></td>
+                    <tr>
+                    <td><input type="Password" name="Password"style="width:294px ;" maxlength= "16" placeholder="New Password"  name="psw" required></td>
+                    <tr>
+                    <td><input type="Password" name="Re-enter Password"style="width:294px ;" maxlength="16"placeholder="Re-enter Password" name="psw" required></td>
+                                
+                </table>
+                </form>
+                <p>
+                    <span><b>By clicking Sign Up, you agree to our Terms and that</br>you</span> have read our Data Policy, including our Cookie use.</b>
+                </p>
+                </div>
+                <hr>
+                </br>               
+                <span class="signup-button">
+                    <a id="link-signin" class="button submit" href="" type="submit"style="cursor:pointer;"> Sign Up</a>
+                </span>
+        </div>
+    </body>
+</html>

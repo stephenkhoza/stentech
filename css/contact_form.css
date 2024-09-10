@@ -1,0 +1,695 @@
+/* styles.css */
+body
+{
+  /*background-image: url(./images/background.jpg);*/
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Header styles */
+header {
+  background-color: #2ca19c;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    /* Add your CSS styles for the navigation tabs and other elements here */
+}
+.logo img {
+  max-width: 100px; /* Adjust the logo width as needed */
+  height: auto;
+  margin-right: 20px; /* Add spacing between logo and heading */
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+
+
+.navBar{
+  display: block;
+}
+.navBar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  color:black;
+  text-decoration-color:white; 
+ 
+}
+.navBar ul li a{
+  text-decoration: none;
+  color:white;
+  position: relative;
+  
+}
+.navBar ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transform: 0.5s;
+}
+.navBar ul li a:hover::after{
+  width: 100%;
+}
+
+
+
+
+
+.navBar .fa{
+  margin: right 8px; ;
+}
+
+/* Style the sub-menus */
+.sub-menu-1{
+  display: none;
+}
+.navBar ul li:hover .sub-menu-1{
+  display: block;
+  position: absolute;
+  background:  #687681;
+  margin-top: 15px;
+  margin-left: -15px;
+  
+}
+.navBar ul li:hover .sub-menu-1{
+  display: block;
+  margin-block: 10px;
+}
+.navBar ul li:hover .sub-menu-1 ul li{
+  display: block;
+  margin: 10px;
+}
+
+.sub-menu-2{
+  display: none;
+}
+.navBar ul li:hover .sub-menu-2 {
+  display: block;
+  position: absolute;
+  background: #687681;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+.navBar ul li:hover .sub-menu-2{
+  display: block;
+  margin-block: 10px;
+}
+.navBar ul li:hover .sub-menu-2 ul li{
+  display: block;
+  margin: 10px;
+}
+/*.active, .navBar ul li:hover{
+  background: #aaa205;
+  border-radius: 3px;
+  
+}*/
+
+.sub-menu-3{
+  display: none;
+}
+.navBar ul li:hover .sub-menu-3{
+  display: block;
+  position: absolute;
+  background:  #687681;
+  margin-top: 15px;
+  margin-left: -15px;
+  
+}
+.navBar ul li:hover .sub-menu-3{
+  display: block;
+  margin-block: 10px;
+}
+.navBar ul li:hover .sub-menu-3 ul li{
+  display: block;
+  margin: 10px;
+}
+
+
+.header-text{
+  margin-top: 5%;
+  font-size: 30px;
+}
+.header-text h1{
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+/*
+.navBar {
+  display: block;
+}
+.navBar  ul{
+  list-style: none;
+  display: flex;
+}
+.navBar  ul li{
+  padding: 10px 30px;
+}
+.navBar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+.navBar  ul li a:hover{
+  color: var(--color-primary);
+}
+.navBar  ul li a:hover .sub-menu-1{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100;
+  background: #2ca19c;
+}
+.navBar  ul li a:hover .sub-menu-1 ul {
+  display: block;
+  margin: 10px;
+}
+.sub-menu-1 ul li {
+  width: 150px;
+  padding: 10px;
+}*/
+/* Style the navigation menu */
+/*nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-link {
+  text-decoration: none;
+  color: #333;   
+  padding: 10px 20px;
+  margin: 5px;
+  display: inline-block;
+  transition: color 0.3s; 
+}
+.nav-link:hover {
+  color: #ff6600; 
+}
+*/
+
+
+/* Style the sub-menus */
+/*.sub-menu-1,
+.sub-menu-2,
+.sub-menu-3 {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.nav-link:hover + .sub-menu-1,
+.nav-link:hover + .sub-menu-2,
+.nav-link:hover + .sub-menu-3 {
+    display: block;
+}
+
+
+
+.sub-menu-1 li,
+.sub-menu-2 li,
+.sub-menu-3 li {
+    padding: 10px 20px;
+}
+.nav-link , sub-menu-1 ul li{
+
+  display:block;
+}*/
+
+
+
+.navigation .btnLogin-popup {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover{
+  background-color: #fff;
+  color: #162938;
+}
+
+/* Additional CSS styles for the website's appearance */
+
+
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/*footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}*/
+
+/*
+==================================
+Navigation Media Query
+==================================
+*/
+@media only screen and (max-width: 768px){
+  .nav_menu{
+    position: fixed;
+    top: 0;
+    left: -30rem;
+    width: 0rem;
+    background-color: var(white);
+    z-index: 9990;
+    height: 100;
+    transition: all .3s;
+
+  }
+  .nav_menu.open{
+    left:0rem;
+    width: 30rem;
+  }
+  .nav_logo{
+    width: 50;
+  }
+  .nav_hamburger{
+    display: block;
+  }
+
+  .menu_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: orange;
+    padding: 1.8rem 1rem;
+  }
+  
+}
+
+/*-------Services----------*/
+.service{
+  background-color: #f7f7f7;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+}
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.service-col{
+  flex-basis: 23%;
+  background: #a8a0a0;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 10px 10px;
+  box-sizing:border-box;
+
+}
+.service-col i {
+  font-size: 40px;
+  color: #2ca19c;
+  margin-bottom: 15px;
+}
+.service-col h4 a {
+  font-size: 20px;
+  color: #333;
+  text-decoration: none;
+}
+.service-col h4 a:hover {
+  color: #2ca19c;
+}
+
+
+
+
+/* Apply styles to the section with class "services-area" */
+.services-area {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+}
+
+/* Style the area title */
+.area-title {
+    font-size: 28px;
+    color: #333;
+    margin-top: 15px;
+}
+
+/* Style the horizontal divider */
+.devider {
+    width: 50px;
+    height: 3px;
+    background-color: #2ca19c;
+    margin: 15px auto;
+}
+
+/* Style the paragraph text within the area */
+.services-area p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Style the service boxes */
+.single-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Style the icons inside the service boxes */
+.single-item i {
+    font-size: 40px;
+    color: #2ca19c;
+    margin-bottom: 15px;
+}
+
+/* Style the service titles within the boxes */
+.single-item h4 a {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.single-item h4 a:hover {
+    color: #2ca19c;
+}
+
+/* Style the service descriptions within the boxes */
+.single-item p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Style the "View more Services" link */
+.bottom-content a {
+    font-size: 16px;
+    color: #2ca19c;
+    text-decoration: none;
+}
+
+.bottom-content a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer styles */
+
+#footer{
+  padding: 60px 0 20px;
+  background: #efefef;
+  position: relative;
+}
+.footer-row{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-left , .footer-right{
+  flex-basis: 45%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.footer-right{
+  text-align: left;
+}
+.footer-row h1{
+  margin: 10px 0;
+}
+.footer-row p{
+  line-height: 35px;
+}
+.footer-left .fas,.footer-right .fas{
+  font-size: 20;
+  color: #009688;
+  margin: 10px;
+}
+footer-img{
+  max-width: 370px;
+  opacity: 0.1;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%,-50%);
+}
+
+/* Style the footer-bottom section */
+.footer-bottom {
+  background-color: #333; /* Background color for the footer */
+  color: #fff; /* Text color */
+  padding: 10px 0; /* Padding at the top and bottom */
+}
+
+.container {
+  width: 90%; /* Set the width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style the copyright text and the "Sten Technologies" link */
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px; /* Adjust font size as needed */
+  text-align: center;
+}
+
+.footer-bottom a {
+  color: #2ca19c; /* Link color */
+  text-decoration: none; /* Remove underline from the link */
+  font-weight: bold; /* Make the link text bold */
+}
+
+/* Style the social media icons container */
+.social {
+  margin: 20px; /* Add margin around the container for spacing */
+}
+
+
+
+/* Style the social media icons */
+.social ul {
+  list-style: none; /* Remove default list bullets */
+  padding: 0; /* Remove default list padding */
+  display: flex; /* Display the icons horizontally */
+}
+
+.social ul a {
+  text-decoration: none; /* Remove underlines from the links */
+  color: #333; /* Set the icon color */
+  font-size: 24px; /* Set the icon size */
+  margin-right: 10px; /* Add spacing between the icons */
+}
+
+/* Style the icons on hover (example) */
+.social ul a:hover {
+  color: #007bff; /* Change the icon color on hover */
+}
+
+
+
+/*footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-content p {
+  font-size: 14px;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.footer-content ul li:last-child {
+  margin-right: 0;
+}
+
+.footer-content ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+  text-decoration: underline;
+}
+*/
+
+.logo img {
+  max-width: 150px; /* Adjust the width as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the logo horizontally */
+}
+
+
+
+
+/* Style the contact area container */
+.contact-area {
+    background-color: #f5f5f5; /* Background color */
+    padding: 50px 0;
+  }
+  
+  /* Style the contact box container */
+  .contact-box {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  /* Style the contact information items */
+  .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .item .icon {
+    font-size: 24px;
+    color: #007bff; /* Icon color */
+    margin-right: 15px;
+  }
+  
+  .item h5 {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .item p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Style the contact form */
+  .wpcf7-form {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .wpcf7-form input[type="text"],
+  .wpcf7-form input[type="email"],
+  .wpcf7-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  
+  .wpcf7-form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .wpcf7-form button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+  }
+  
+  /* Style alert messages */
+  .alert-msg {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+  }
+  
+  /* Center the form content */
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Center the form horizontally */
+  .wpcf7-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Additional styling can be added as needed */
